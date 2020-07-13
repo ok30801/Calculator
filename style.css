@@ -1,0 +1,87 @@
+.calc__wrap {
+    max-width: 360px;
+    border: 1px solid #e1dada;;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    box-shadow: 2px 4px 20px -4px rgba(0,0,0,.1);
+}
+.display {
+    margin-bottom: 10px;
+    height: 50px;
+    border: 1px solid #d7c7c7;
+    background: white;
+    grid-column: 1/5;
+    padding: 15px;
+    text-align: end;
+    font-size: 2.8rem;
+}
+.cancel {
+    grid-column: 1/3;
+}
+.clear {
+    grid-column: 3/-1;
+}
+button {
+    height: 65px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.equal {
+    grid-column: 4;
+    grid-row: 6/8;
+    height: auto;
+}
+#zero {
+    grid-column: 1/3;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #514e4e;
+    margin-top: -30px;
+}
+.close:hover {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.container {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    padding-top: 80px;
+}
+.open-modal {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 350px;
+}
+.modal-section {
+    width: 600px;
+    height: auto;
+    display: none;
+    padding: 20px;
+    box-shadow: 1px 8px 30px 4px rgba(0,0,0,.1);
+
+}
+body {
+    font-family: open sans;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.375;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
